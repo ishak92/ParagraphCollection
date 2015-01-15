@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ParagraphCollection", "ParagraphCollection\ParagraphCollection.csproj", "{8C159261-5752-4CB4-87BB-5A663BFAD12B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WordParagraphCollectorTests", "WordParagraphCollectorTests\WordParagraphCollectorTests.csproj", "{E6C98640-2FB7-4EBA-992E-0F96283AF555}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{85A5642A-7DC9-42CC-B4D4-90FE66E529BB}"
+	ProjectSection(SolutionItems) = preProject
+		Local.testsettings = Local.testsettings
+		ParagraphCollection.vsmdi = ParagraphCollection.vsmdi
+		TraceAndTestImpact.testsettings = TraceAndTestImpact.testsettings
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(TestCaseManagementSettings) = postSolution
+		CategoryFile = ParagraphCollection.vsmdi
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8C159261-5752-4CB4-87BB-5A663BFAD12B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8C159261-5752-4CB4-87BB-5A663BFAD12B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8C159261-5752-4CB4-87BB-5A663BFAD12B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8C159261-5752-4CB4-87BB-5A663BFAD12B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E6C98640-2FB7-4EBA-992E-0F96283AF555}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E6C98640-2FB7-4EBA-992E-0F96283AF555}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E6C98640-2FB7-4EBA-992E-0F96283AF555}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E6C98640-2FB7-4EBA-992E-0F96283AF555}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
