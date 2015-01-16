@@ -1,4 +1,4 @@
-﻿using ParagraphCollection;
+﻿using ParagraphProject;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
 
@@ -70,10 +70,10 @@ namespace WordParagraphCollectorTests
         [TestMethod()]
         public void getAllParagraphsTestNumberTest()
         {
-            var wordParagraphCollector = new WordParagraphExtracter(@"C:\Users\trololo\Documents\Visual Studio 2010\Projects\ParagraphCollector\ParagraphCollection\ParagraphCollection\data\TestFile1.docx");
+            var wordParagraphCollector = new WordParagraphExtracter();
+            wordParagraphCollector.AddParagraphsFromFile(@"C:\Users\Vasya\Documents\Visual Studio 2010\Projects\ParagraphCollection\ParagraphCollection\data\TestFile1.docx");
             var pars = wordParagraphCollector.getAllParagraphs();
 
-            
             Assert.AreEqual(7, pars.getNumberOfParagpaphs());
         }
 
@@ -81,9 +81,9 @@ namespace WordParagraphCollectorTests
         [TestMethod()]
         public void findParagraphTest()
         {
-            var wordParagraphCollector = new WordParagraphExtracter(@"C:\Users\trololo\Documents\Visual Studio 2010\Projects\ParagraphCollector\ParagraphCollection\ParagraphCollection\data\TestFile1.docx");
-            var pars = wordParagraphCollector.getAllParagraphs();
-            var parsWitsWord = pars.getParagraphsWithSubWord("домен");
+            var wordParagraphCollector = new WordParagraphExtracter();
+            wordParagraphCollector.AddParagraphsFromFile(@"C:\Users\Vasya\Documents\Visual Studio 2010\Projects\ParagraphCollection\ParagraphCollection\data\TestFile1.docx");
+            var parsWitsWord = wordParagraphCollector.getAllParagraphs().getParagraphsWithSubWord("домен");
 
             Assert.AreEqual(1, parsWitsWord.getNumberOfParagpaphs());
         }
@@ -91,9 +91,9 @@ namespace WordParagraphCollectorTests
         [TestMethod()]
         public void canNotFindParagraphTest()
         {
-            var wordParagraphCollector = new WordParagraphExtracter(@"C:\Users\trololo\Documents\Visual Studio 2010\Projects\ParagraphCollector\ParagraphCollection\ParagraphCollection\data\TestFile1.docx");
-            var pars = wordParagraphCollector.getAllParagraphs();
-            var parsWitsWord = pars.getParagraphsWithSubWord("трололо");
+            var wordParagraphCollector = new WordParagraphExtracter();
+            wordParagraphCollector.AddParagraphsFromFile(@"C:\Users\Vasya\Documents\Visual Studio 2010\Projects\ParagraphCollection\ParagraphCollection\data\TestFile1.docx");
+            var parsWitsWord = wordParagraphCollector.getAllParagraphs().getParagraphsWithSubWord("трололо");
 
             Assert.AreEqual(0, parsWitsWord.getNumberOfParagpaphs());
         }

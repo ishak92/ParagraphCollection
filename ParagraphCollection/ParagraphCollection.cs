@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace ParagraphCollection
+namespace ParagraphProject
 {
-    class ParagraphCollection
+    public class ParagraphCollection
     {
         private List<Paragraph> ParagraphList;
 
@@ -17,6 +17,11 @@ namespace ParagraphCollection
         void addParagraph(Paragraph par)
         {
             ParagraphList.Add(par);
+        }
+
+        public List<Paragraph> GetAllParagraphs()
+        {
+            return ParagraphList;
         }
 
         public ParagraphCollection getParagraphsWithSubWord(string subWord)

@@ -4,7 +4,7 @@ using System.Globalization;
 using System.Linq;
 using System.Text;
 
-namespace ParagraphCollection
+namespace ParagraphProject
 {
     public class Paragraph
     {
@@ -22,7 +22,7 @@ namespace ParagraphCollection
 
         }
 
-        string getText()
+        public string getText()
         {
             return Text;
         }
